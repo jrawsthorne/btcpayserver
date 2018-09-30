@@ -13,7 +13,7 @@ namespace BTCPayServer.Controllers
     {
         public IActionResult Index()
         {
-            return View("Home");
+            return RedirectToAction(nameof(ManageController.Index), "Manage");
         }
 
         public IActionResult About()
